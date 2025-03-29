@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Memorable Vacation in Disneyland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffcccc;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        header {
+            background-color: #808080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            margin: 20px;
+        }
+        h1 {
+            color: #800000;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            font-style: italic;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            background-color: #b30000;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .quiz-container {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .quiz-container h2 {
+            color: #800000;
+        }
+        .quiz-container label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        .quiz-container input[type="radio"] {
+            margin-right: 10px;
+        }
+        .quiz-container input[type="text"] {
+            padding: 5px;
+            font-size: 1.1em;
+            width: 300px;
+        }
+        .quiz-container button {
+            background-color: #b30000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .quiz-container button:hover {
+            background-color: #800000;
+        }
+        .quiz-container .score {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .team-members {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .team-members h3 {
+            color: #800000;
+        }
+        .team-members ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .team-members li {
+            margin-bottom: 10px;
+        }
+        .course-details {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .course-details h3 {
+            color: #800000;
+        }
+        .grammar-basics {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .grammar-basics h3 {
+            color: #800000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>A Memorable Vacation in Disneyland</h1>
+</header>
+
+<main>
+    <div class="image">
+        <img src="https://via.placeholder.com/800x400.png?text=Disneyland" alt="Disneyland">
+    </div>
+
+    <p>Nine years ago, I had the most unforgettable vacation of my life. My family and I traveled to Disneyland, and it was a dream come true. We had been planning the trip for months, and when the day finally arrived, we were extremely excited.</p>
+
+    <p>As soon as we entered the park, we were amazed by the magical atmosphere. Everywhere we looked, there were colorful decorations, cheerful music, and smiling characters. First, we rushed to Space Mountain, which was both thrilling and terrifying. <span class="highlight">I should have held my mom’s hand because I screamed the entire ride!</span></p>
+
+    <p>Then, we explored Fantasyland, where we met Mickey Mouse and took many pictures. Later, we watched the spectacular parade, which featured all of our favorite Disney characters dancing and waving at the crowd. We also enjoyed delicious treats like churros and ice cream while walking around the park.</p>
+
+    <p>In the evening, we found a perfect spot to watch the fireworks show. The sky lit up with beautiful colors, and the music made the moment even more special. <span class="highlight">I should have taken more pictures</span> because I wanted to remember every detail.</p>
+
+    <p>At the end of the day, we were exhausted but incredibly happy. That trip to Disneyland was one of the best experiences of my childhood, and I will always cherish those magical moments.</p>
+
+    <!-- Quiz Section 1 -->
+    <div class="quiz-container">
+        <h2>Interactive Exercise 1: Multiple Choice</h2>
+        <form id="quizForm">
+            <p><strong>1. What did Ivan have to do before his friends arrived?</strong></p>
+            <label>
+                <input type="radio" name="question1" value="a"> Clean the house
+            </label>
+            <label>
+                <input type="radio" name="question1" value="b"> Wash the dishes and eat the pizza
+            </label>
+            <label>
+                <input type="radio" name="question1" value="c"> Do the English project
+            </label>
+            <br><br>
+        </form>
+    </div>
+
+    <!-- Quiz Section 2 -->
+    <div class="quiz-container">
+        <h2>Interactive Exercise 2: Fill in the blanks</h2>
+        <form id="fillBlanksForm">
+            <p><strong>Ivan's friends helped him with a <input type="text" id="blank1" placeholder="Enter here"> English.</strong></p>
+            <p><strong>After the English project, everyone ate together <input type="text" id="blank2" placeholder="Enter here"> .</strong></p>
+            <br>
+            <button type="button" onclick="checkAnswers()">Check answers</button>
+        </form>
+        <p class="score" id="quizScore">Score: 0/2</p>
+    </div>
+
+    <!-- Team Members Section -->
+    <div class="team-members">
+        <h3>Team Members:</h3>
+        <ul>
+            <li>Felix Olivarria Ivan</li>
+            <li>Acosta Luna Jesus Francisco</li>
+            <li>Moreno Antunez Jose Ruben</li>
+            <li>Yong Guerrero Jesus Antonio</li>
+            <li>Molina Alamo Manuel Patricio</li>
+            <li>Ramirez Sánchez Javier Alejandro</li>
+            <li>Rogero Gamez Santiago</li>
+            <li>Emilio Encinas Acosta</li>
+        </ul>
+    </div>
+
+    <!-- Course and Teacher Details Section -->
+    <div class="course-details">
+        <h3>Teacher and Course Details:</h3>
+        <p><strong>Teacher:</strong> Moisés Galaz</p>
+        <p><strong>Subject:</strong> English II</p>
+        <p><strong>Group/Shift:</strong> 201-M</p>
+    </div>
+
+    <!-- English Grammar Basics Section -->
+    <div class="grammar-basics">
+        <h3>English Grammar Basics</h3>
+        <p><strong>Parts of speech:</strong> nouns, pronouns, verbs, adjectives, adverbs, prepositions, interjections, and conjunctions.</p>
+        <p><strong>Determiners:</strong> articles, demonstratives, interrogatives, possessives, quantifiers, and numerals.</p>
+        <p><strong>Modal verbs:</strong> can, could, may, might, must, shall, will, should, would.</p>
+        <p><strong>Fundamental principles:</strong> word order, punctuation, tense and aspect, connectives, and determiners.</p>
+        <p><strong>Basic rules of English grammar:</strong> Subject + verb + object + complements, Auxiliary do + subject + verb + complements, Verb to be + subject + complements, Modal verb + subject + complements, Verb have + subject + participle + complements.</p>
+        <p><strong>Evolution of English grammar:</strong> The rules of English grammar are constantly evolving and reflect changes in society. For example, the English spoken in 1800 is not the same as the English spoken in 2020.</p>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2025 Disneyland Memories</p>
+</footer>
+
+<script>
+    let score = 0;
+
+    function checkAnswers() {
+        const blank1 = document.getElementById('blank1').value.trim().toLowerCase();
+        const blank2 = document.getElementById('blank2').value.trim().toLowerCase();
+        const scoreElement = document.getElementById('quizScore');
+
+        // Reset score
+        score = 0;
+
+        // Check first answer (related to soccer)
+        if (blank1 === 'discussion' || blank1 === 'talk' || blank1 === 'conversation') {
+            score++;
+        }
+
+        // Check second answer (related to eating together)
+        if (blank2 === 'ate' || blank2 === 'ate') {
+            score++;
+        }
+
+        // Update score display
+        scoreElement.textContent = `Score: ${score}/2`;
+    }
+</script>
+
+</body>
+</html>
